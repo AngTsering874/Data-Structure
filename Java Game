@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
+class Main{
+    public static void main(String[] args){
+        int i=1,j=0;
+        Scanner a=new Scanner(System.in);
+           System.out.println("Guess the Number");
+             int w = ThreadLocalRandom.current().nextInt(1, 100); 
+             while(i!=w){
+                 i=a.nextInt();
+       
+        
+        if(i<w-5){
+            System.out.println("Too Low Guess");
+        
+        }
+        else if(i>w)
+        {
+            System.out.println("To high");
+        }
+        else if(i>=w-&& i<=w){
+            System.out.println("Almost there");
+        }
+        j++;
+             }
+             System.out.println("you attemed in " +j);
+        
+    }
+}
