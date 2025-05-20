@@ -1,0 +1,30 @@
+#include<stdio.h>
+int linerSearch(int arr[], int size, int target) {
+    for (int i = 0; i < size; i++) 
+	{
+        if (arr[i] == target) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main() {
+    int i,n;
+    int target;
+    printf("How many numbe you want");
+    scanf("%d",&n);
+    int arr[n];
+
+    
+	for(i=0;i<n;i++){
+printf("Enter your number:");    
+    scanf("%d",&arr[i]);
+	}
+     printf("Enter your targer") ;
+   scanf("%d",&target);
+  
+   int v=linerSearch(arr,n,target)+1;
+   printf("%d",v);
+   
+}
